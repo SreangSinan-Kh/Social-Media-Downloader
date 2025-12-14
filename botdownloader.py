@@ -125,7 +125,7 @@ def welcome_logic(message):
 
     welcome_text = (
         f"👋 **សួស្តីបង {full_name}!**\n"
-        "✨ **ស្វាគមន៍មកកាន់ Social Downloader** ✨\n\n"
+        "✨ **ស្វាគមន៍មកកាន់ Social Media Downloader** ✨\n\n"
         "ខ្ញុំអាចជួយបងទាញយកវីដេអូបានយ៉ាងងាយស្រួលពី៖\n"
         "🔹 **TikTok** (No Watermark)\n"
         "🔹 **Facebook** & **Instagram**\n"
@@ -185,4 +185,5 @@ def callback_query(call):
 # --- RUNNING BOTH FLASK AND BOT ---
 print("Bot is running on Render...")
 keep_alive() # បើក Web Server
+
 bot.infinity_polling(timeout=10, long_polling_timeout=5)
