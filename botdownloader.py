@@ -104,7 +104,7 @@ def process_background(chat_id, message_id, url, is_audio):
                 caption = (
                     f"✅ {title}\n"
                     f"🌍 Source: {platform}\n\n"
-                    f"🤖 [Downloaded by Telegram bot]({BOT_LINK})"
+                    f"🤖 [Downloaded by Social Media Downloader]({BOT_LINK})"
                 )
                 if is_audio:
                     bot.send_audio(chat_id, file, caption=caption, parse_mode='Markdown', timeout=120)
@@ -187,3 +187,4 @@ print("Bot is running on Render...")
 keep_alive() # បើក Web Server
 
 bot.infinity_polling(timeout=10, long_polling_timeout=5)
+
